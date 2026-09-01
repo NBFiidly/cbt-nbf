@@ -14,4 +14,5 @@ class CourseStudent extends Model
         'id'
         ];
 
+
 }
