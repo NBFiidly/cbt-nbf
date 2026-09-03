@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ProfileController;
-use App\Models\CourseQuestion;
+// use App\Models\CourseQuestion;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
