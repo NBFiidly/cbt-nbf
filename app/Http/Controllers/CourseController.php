@@ -13,7 +13,7 @@ class CourseController extends Controller
     public function index()
     {
         //
-        return 'helo guru, berikut kelas anda';
+        return view('admin.courses.index');
     }
 
     /**
@@ -21,7 +21,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.courses.create');
     }
 
     /**
