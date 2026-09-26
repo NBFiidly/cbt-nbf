@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\LearningController;
 use App\Http\Controllers\ProfileController;
-// use App\Models\CourseQuestion;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -21,6 +21,8 @@ Route::middleware('auth')->group(function () {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
 
         Route::resource('courses', CourseController::class)->middleware('role:teacher');
+
+        Route::get('/learning', [LearningController::class, 'index'])->middleware('role:student')->name('leraning.index');
 
     });
 
