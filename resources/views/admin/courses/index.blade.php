@@ -201,7 +201,8 @@
                             </div>
                         </div>
                         <div class="flex shrink-0 w-[150px] items-center justify-center">
-                            <p class="font-semibold">{{ \Carbon\Carbon::parse($course->created_at)->format('j F, Y') }}</p>
+                            <p class="font-semibold">
+                                {{ \Carbon\Carbon::parse($course->created_at)->format('j F, Y') }}</p>
                         </div>
 
                         @if ($course->category->name == 'Product Design')
@@ -237,14 +238,20 @@
                                         class="flex items-center justify-between font-bold text-sm w-full">
                                         Students
                                     </a>
-                                    <a href="course-details.html"
+                                    <a href="{{ route('dashboard.courses.edit', $course) }}"
                                         class="flex items-center justify-between font-bold text-sm w-full">
                                         Edit Course
                                     </a>
-                                    <a href="#"
-                                        class="flex items-center justify-between font-bold text-sm w-full text-[#FD445E]">
-                                        Delete
-                                    </a>
+
+                                    <form method="POST" action="{{ route('dashboard.courses.destroy', $course) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit"
+                                            class="flex items-center justify-between font-bold text-sm w-full text-[#FD445E]">
+                                            Delete
+                                        </button>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
