@@ -27,11 +27,11 @@ Route::middleware('auth')->group(function () {
         Route::resource('courses', CourseController::class)
         ->middleware('role:teacher');
 
-        Route::get('/course/question/create/{course}', [CourseQuestionController::class], 'create')
+        Route::get('/course/question/create/{course}', [CourseQuestionController::class, 'create'])
         ->middleware('role:teacher')
         ->name('course.create.question');
 
-        Route::post('/course/question/save/{course}', [CourseQuestionController::class], 'store')
+        Route::post('/course/question/save/{course}', [CourseQuestionController::class, 'store'])
         ->middleware('role:teacher')
         ->name('course.create.question.store');
 
@@ -74,5 +74,5 @@ Route::middleware('auth')->group(function () {
     });
 
 });
-    
+
 require __DIR__.'/auth.php';

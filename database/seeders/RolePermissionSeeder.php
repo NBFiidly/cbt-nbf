@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 class RolePermissionSeeder extends Seeder
@@ -24,11 +25,15 @@ class RolePermissionSeeder extends Seeder
         ];
 
         foreach ($permissions as $permission) {
-            \Spatie\Permission\Models\Permission::create(['name' => $permission]);
+            Permission::firstOrCreate([
+                'name' => $permission,
+                'guard_name' => 'web',
+            ]);
         }
 
-        $teacherRole = Role::create([
+        $teacherRole = Role::firstOrCreate([
             'name' => 'teacher',
+            'guard_name' => 'web',
         ]);
 
         $teacherRole->givePermissionTo([
@@ -38,8 +43,9 @@ class RolePermissionSeeder extends Seeder
             'delete course',
         ]);
 
-        $studentRole = Role::create([
-        'name' => 'student',
+        $studentRole = Role::firstOrCreate([
+            'name' => 'student',
+            'guard_name' => 'web',
         ]);
 
         $studentRole->givePermissionTo([
@@ -47,11 +53,13 @@ class RolePermissionSeeder extends Seeder
         ]);
 
         // membuat role super admin
-        $user = User::create([
-            'name' => 'fidly',
-            'email' => 'fidly@teacher.com',
-            'password' => bcrypt('12345678'),
-        ]);
+        $user = User::firstOrCreate(
+            ['email' => 'fidly@teacher.com'],
+            [
+                'name' => 'fidly',
+                'password' => bcrypt('12345678'),
+            ]
+        );
 
         $user->assignRole($teacherRole);
 
