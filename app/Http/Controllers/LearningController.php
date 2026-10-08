@@ -16,6 +16,7 @@ class LearningController extends Controller
 
     public function index(){
 
+        /** @var \App\Models\User $user */
         $user = Auth::user();
 
         $my_courses = $user->courses()->with('category')->orderBy('id', 'DESC')->get();
@@ -47,6 +48,7 @@ class LearningController extends Controller
     }
 
     public function learning(Course $course, $question){
+        /** @var \App\Models\User $user */
         $user = Auth::user();
 
         $isEnrolled = $user->courses()->where('course_id', $course->id)->exists();
