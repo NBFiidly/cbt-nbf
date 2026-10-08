@@ -48,19 +48,19 @@ class StudentAnswerController extends Controller
 
             if ($selectedAnswer->course_question_id != $question) {
                 $error = ValidationException::withMessages([
-                    'system_error' => ['System_error! Jawaban tidak tersedia pada pertanyaan!'],
+                'system_error' => ['System_error!' . ("Jawaban tidak tersedia pada pertanyaan!")],
                 ]);
 
                 throw $error;
             }
 
             $existingAnswer = StudentAnswer::where('user_id', Auth::id())
-                ->where('course_question_id', $question)
-                ->first();
+            ->where('course_question_id', $question)
+            ->first();
 
             if ($existingAnswer) {
                 $error = ValidationException::withMessages([
-                    'system_error' => ['System_error! Anda telah menjawab pertanyaan ini!'],
+                'system_error' => ['System_error!' . ("Jawaban tidak tersedia pada pertanyaan!")],
                 ]);
 
                 throw $error;
@@ -68,10 +68,10 @@ class StudentAnswerController extends Controller
 
             $answerValue = $selectedAnswer->is_correct ? 'correct' : 'wrong';
 
-            StudentAnswer::create([
+            StudentAnswer::created([
                 'user_id' => Auth::id(),
                 'course_question_id' => $question,
-                'answer' => $answerValue,
+                'answer' => $answerValue
             ]);
 
             DB::commit();
@@ -85,6 +85,7 @@ class StudentAnswerController extends Controller
                 return redirect()->route('dashboard.learning.course', ['course' => $course->id, 'question' =>
                 $nextQuestion->id]);
             }
+
             else {
                 return redirect()->route('dashboard.learning.finished.course', $course->id);
             }
