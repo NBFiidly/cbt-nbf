@@ -16,7 +16,7 @@
             class="w-[270px] flex flex-col shrink-0 min-h-screen justify-between p-[30px] border-r border-[#EEEEEE] bg-[#FBFBFB]">
             <div class="w-full flex flex-col gap-[30px]">
                 <a href="index.html" class="flex items-center justify-center">
-                    <img src="{{ asset('images/logo/logo.svg')}}" alt="logo">
+                    <img src="{{ asset('images/logo/logo.svg') }}" alt="logo">
                 </a>
                 <ul class="flex flex-col gap-3">
                     <li>
@@ -26,7 +26,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/home-hashtag.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/home-hashtag.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Overview</p>
                         </a>
@@ -35,7 +35,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 bg-[#2B82FE] transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/note-favorite.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/note-favorite.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold text-white transition-all duration-300 hover:text-white">Courses</p>
                         </a>
@@ -44,7 +44,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/crown.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/crown.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Certificates</p>
                         </a>
@@ -53,7 +53,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/sms-tracking.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/sms-tracking.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Messages</p>
                             <div
@@ -66,7 +66,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/profile-2user.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/profile-2user.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Portfolio</p>
                         </a>
@@ -80,7 +80,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/3dcube.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/3dcube.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Rewards</p>
                         </a>
@@ -89,7 +89,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/code.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/code.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">A.I Plugins</p>
                         </a>
@@ -98,7 +98,7 @@
                         <a href=""
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/setting-2.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/setting-2.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Settings</p>
                         </a>
@@ -107,7 +107,7 @@
                         <a href="signin.html"
                             class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
                             <div>
-                                <img src="{{ asset('images/icons/security-safe.svg')}}" alt="icon">
+                                <img src="{{ asset('images/icons/security-safe.svg') }}" alt="icon">
                             </div>
                             <p class="font-semibold transition-all duration-300 hover:text-white">Logout</p>
                         </a>
@@ -123,28 +123,28 @@
                         class="font-semibold placeholder:text-[#7F8190] placeholder:font-normal w-full outline-none"
                         placeholder="Search by report, student, etc" name="search">
                     <button type="submit" class="ml-[10px] w-8 h-8 flex items-center justify-center">
-                        <img src="{{ asset('images/icons/search.svg')}}" alt="icon">
+                        <img src="{{ asset('images/icons/search.svg') }}" alt="icon">
                     </button>
                 </form>
                 <div class="flex items-center gap-[30px]">
                     <div class="flex gap-[14px]">
                         <a href=""
                             class="w-[46px] h-[46px] flex shrink-0 items-center justify-center rounded-full border border-[#EEEEEE]">
-                            <img src="{{ asset('images/icons/receipt-text.svg')}}" alt="icon">
+                            <img src="{{ asset('images/icons/receipt-text.svg') }}" alt="icon">
                         </a>
                         <a href=""
                             class="w-[46px] h-[46px] flex shrink-0 items-center justify-center rounded-full border border-[#EEEEEE]">
-                            <img src="{{ asset('images/icons/notification.svg')}}" alt="icon">
+                            <img src="{{ asset('images/icons/notification.svg') }}" alt="icon">
                         </a>
                     </div>
                     <div class="h-[46px] w-[1px] flex shrink-0 border border-[#EEEEEE]"></div>
                     <div class="flex gap-3 items-center">
                         <div class="flex flex-col text-right">
                             <p class="text-sm text-[#7F8190]">Howdy</p>
-                            <p class="font-semibold">Bondan Poro</p>
+                            <p class="font-semibold">{{ Auth::user()->name }}</p>
                         </div>
                         <div class="w-[46px] h-[46px]">
-                            <img src="{{ asset('images/photos/default-photo.svg')}}" alt="photo">
+                            <img src="{{ asset('images/photos/default-photo.svg') }}" alt="photo">
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,8 @@
                 <div class="breadcrumb flex items-center gap-[30px]">
                     <a href="#" class="text-[#7F8190] last:text-[#0A090B] last:font-semibold">Home</a>
                     <span class="text-[#7F8190] last:text-[#0A090B]">/</span>
-                    <a href="{{ route('dashboard.learning.index') }}" class="text-[#7F8190] last:text-[#0A090B] last:font-semibold">My
+                    <a href="{{ route('dashboard.learning.index') }}"
+                        class="text-[#7F8190] last:text-[#0A090B] last:font-semibold">My
                         Courses</a>
                     <span class="text-[#7F8190] last:text-[#0A090B]">/</span>
                     <a href="#" class="text-[#7F8190] last:text-[#0A090B] last:font-semibold ">Rapport
@@ -174,81 +175,53 @@
                         <div class="flex items-center">
                             <div class="flex gap-[10px] items-center">
                                 <div class="w-6 h-6 flex shrink-0">
-                                    <img src="{{ asset('images/icons/note-text.svg')}}" alt="icon">
+                                    <img src="{{ asset('images/icons/note-text.svg') }}" alt="icon">
                                 </div>
-                                <p class="font-semibold">6 of 6 correct</p>
+                                <p class="font-semibold">{{ $correctAnswerCount }} of {{ $totalQuestions }} correct
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <p
-                        class="p-[16px_20px] rounded-[10px] bg-[#FD445E] font-bold text-lg text-white outline-[#FD445E] outline-dashed outline-[3px] outline-offset-[7px] mr-[10px]">
-                        Not Passed</p>
-                    <!-- <p class="p-[16px_20px] rounded-[10px] bg-[#06BC65] font-bold text-lg text-white outline-[#06BC65] outline-dashed outline-[3px] outline-offset-[7px] mr-[10px]">Passed</p> -->
+                    @if ($passed)
+                        <p
+                            class="p-[16px_20px] rounded-[10px] bg-[#06BC65] font-bold text-lg text-white outline-[#06BC65] outline-dashed outline-[3px] outline-offset-[7px] mr-[10px]">
+                            Passed</p>
+                    @else
+                        <p
+                            class="p-[16px_20px] rounded-[10px] bg-[#FD445E] font-bold text-lg text-white outline-[#FD445E] outline-dashed outline-[3px] outline-offset-[7px] mr-[10px]">
+                            Not Passed</p>
+                    @endif
                 </div>
             </div>
             <div class="result flex flex-col gap-5 mx-[70px] w-[870px] mt-[30px]">
-                <div
-                    class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
-                    <div class="flex flex-col gap-[6px]">
-                        <p class="text-[#7F8190]">Question</p>
-                        <p class="font-bold text-xl">Why do we need to do marketing?</p>
+
+                @forelse($studentAnswers as $answer)
+                    <div
+                        class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
+                        <div class="flex flex-col gap-[6px]">
+                            <p class="text-[#7F8190]">Question</p>
+                            <p class="font-bold text-xl">{{ $answer->question->question }}</p>
+                        </div>
+
+                        @if ($answer->answer == 'correct')
+                            <div class="flex items-center gap-[14px]">
+                                <p class="bg-[#06BC65] rounded-full p-[8px_20px] text-white font-semibold text-sm">
+                                    {{ $answer->answer }}
+                                </p>
+                            </div>
+                        @else
+                            <p class="bg-[#FD445E] rounded-full p-[8px_20px] text-white font-semibold text-sm">
+                                {{ $answer->answer }}
+                            </p>
+                        @endif
+
                     </div>
-                    <div class="flex items-center gap-[14px]">
-                        <p class="bg-[#06BC65] rounded-full p-[8px_20px] text-white font-semibold text-sm">Success</p>
-                    </div>
-                </div>
-                <div
-                    class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
-                    <div class="flex flex-col gap-[6px]">
-                        <p class="text-[#7F8190]">Question</p>
-                        <p class="font-bold text-xl">Do we need to pay influencer and when?</p>
-                    </div>
-                    <div class="flex items-center gap-[14px]">
-                        <p class="bg-[#FD445E] rounded-full p-[8px_20px] text-white font-semibold text-sm">Failed</p>
-                    </div>
-                </div>
-                <div
-                    class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
-                    <div class="flex flex-col gap-[6px]">
-                        <p class="text-[#7F8190]">Question</p>
-                        <p class="font-bold text-xl">Do we need to pay influencer and when?</p>
-                    </div>
-                    <div class="flex items-center gap-[14px]">
-                        <p class="bg-[#06BC65] rounded-full p-[8px_20px] text-white font-semibold text-sm">Success</p>
-                    </div>
-                </div>
-                <div
-                    class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
-                    <div class="flex flex-col gap-[6px]">
-                        <p class="text-[#7F8190]">Question</p>
-                        <p class="font-bold text-xl">Do we need to pay influencer and when?</p>
-                    </div>
-                    <div class="flex items-center gap-[14px]">
-                        <p class="bg-[#FD445E] rounded-full p-[8px_20px] text-white font-semibold text-sm">Failed</p>
-                    </div>
-                </div>
-                <div
-                    class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
-                    <div class="flex flex-col gap-[6px]">
-                        <p class="text-[#7F8190]">Question</p>
-                        <p class="font-bold text-xl">Do we need to pay influencer and when?</p>
-                    </div>
-                    <div class="flex items-center gap-[14px]">
-                        <p class="bg-[#06BC65] rounded-full p-[8px_20px] text-white font-semibold text-sm">Success</p>
-                    </div>
-                </div>
-                <div
-                    class="question-card w-full flex items-center justify-between p-4 border border-[#EEEEEE] rounded-[20px]">
-                    <div class="flex flex-col gap-[6px]">
-                        <p class="text-[#7F8190]">Question</p>
-                        <p class="font-bold text-xl">Do we need to pay influencer and when?</p>
-                    </div>
-                    <div class="flex items-center gap-[14px]">
-                        <p class="bg-[#FD445E] rounded-full p-[8px_20px] text-white font-semibold text-sm">Failed</p>
-                    </div>
-                </div>
+                @empty
+                    <p>Belum ada jawaban!</p>
+                @endforelse
+
             </div>
             <div class="options flex items-center mx-[70px] gap-5 mt-[30px]">
                 <a href=""
